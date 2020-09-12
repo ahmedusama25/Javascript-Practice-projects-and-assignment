@@ -1,6 +1,6 @@
 //Initializing a promise function
 
-var promise = new promise(function(resolve,Reject){
+var promise = new Promise(function(resolve,Reject){
     var treat= "Due,But not given yet";
     if(treat==="Given"){
         resolve("OOh Yeah! Thanks alot")
@@ -10,7 +10,7 @@ var promise = new promise(function(resolve,Reject){
     }
 })
 
-promise.than(function(data){
+promise.then(function(data){
     console.log(`Resolve==> ${data}`)
 })
     .catch(function(error){
